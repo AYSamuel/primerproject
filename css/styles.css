@@ -1,0 +1,215 @@
+* {
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+body{
+    background-color: #07192d;
+    color: white;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15151e;
+}
+.logo {
+    margin-left: 4em;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: 800;
+    text-shadow: -0.0em 0.03em 0.12em rgba(0, 0, 0, 0.755);
+}
+.logo span:not(:first-child) {
+    margin-left: -0.18em;
+}
+.for-navigation {
+    margin-right: 4em;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-nav li a, .header-nav li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 15px;
+}
+.header-nav a, .button_top {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.header-nav a:hover {
+    cursor: pointer;
+    color: #2C74B3;
+}
+.btn {
+    border: none;
+    border-radius: 0.5em;
+    background: #030303;
+    font-weight: bold;
+}
+
+.button_top {
+    display: block;
+    border: 2px solid #000000;
+    border-radius: 0.75em;
+    padding: 0.5em 0.75em;
+    background: #2c2751;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+    text-decoration: none;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+    cursor: pointer;
+    color: #2C74B3;
+}
+
+button:active .button_top, button:active .button_foot  {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}
+h1, h3, h4, a {
+    color: white;
+}
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1584269408084-df3446157c9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+.hero h1 {
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+}
+hr {
+    border: 0;
+    border-bottom: 1px solid rgb(81, 81, 81);
+}
+fieldset {
+    border: 1px solid rgb(81, 81, 81);
+    border-left: 0;
+    border-right: 0;
+    padding: 3rem;
+    position: relative;
+    top: -6.4rem;
+}
+fieldset legend, fieldset p {
+    text-align: center;
+}
+.caption {
+    color: rgb(207, 207, 207);
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border: 3px inset rgb(16, 15, 15);
+    background: #243763;
+    box-shadow: 2px 2px 6px #2C74B3, -2px -2px 6px #2C74B3;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+.box p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #030303;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CWM h4 {
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2rem;
+}
+.sicons {
+    padding: 6rem 0;
+}
+.sicons a {
+    margin-right: 4rem;
+}
+.fa-brands {
+    font-size: 3rem;
+}
+.footcont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    margin-top: 2em;
+    background-image: url('../images/wave.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    justify-content: center;
+    column-gap: 2rem;
+}
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    row-gap: .6rem;
+}
+
+.cont2 {
+    width: 20%;
+}
+.cont2 p {
+    text-align: left;
+    color: rgb(207, 207, 207);
+}
+.btn1 {
+    border: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    background-color: #07192d;
+    font-size: larger;
+}
+.button_foot {
+    display: block;
+    border: 2px solid #000000;
+    padding: 1em 3em;
+    background: #2C74B3;
+    color: rgb(207, 207, 207);
+    transform: translateY(-0.2em);
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+.copy p {
+    font-size: 1.1rem;
+    color: rgb(207, 207, 207);
+}
+.copy {
+    margin-bottom: 0;
+}
+/* .box:hover {
+  transform: translateY(-5px);
+  transition: all .5s ease-in-out;
+} */
